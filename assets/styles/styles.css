@@ -56,19 +56,20 @@ body {
 .time {
   margin: 6px 0 20px 0;
 }
-.city {
-}
-
-.temperature {
-  font-size: 65px;
-  text-shadow: 4px 4px rgba(0, 0, 0, 0.7);
-  font-weight: 600;
+.temperature{
   background: rgba(255, 255, 255, 0.4);
   box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
   border: none;
   border-radius: 10px;
   margin: 0 30px;
   padding: 20px;
+}
+.temperature .value{
+  font-size: 65px;
+  font-weight: 600;
+}
+.feel-like{
+  margin-top: 10px;
 }
 .short-desc {
   font-size: 40px;

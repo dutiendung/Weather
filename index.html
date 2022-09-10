@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/style/style.css" />
+    <title>Weather by DuTienDung</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="icon" type="image/x-icon" href="https://play-lh.googleusercontent.com/EW-ud-m_nZdvESTplVWJui_yV6Yto7goY4ixTHZU12tbk8bxO51k14skQZgbT2A0dKs">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -14,7 +15,7 @@
 
   <body>
     <div id="weather">
-      <input type="text" class="search" placeholder="Search" />
+      <input type="text" class="search" placeholder="Viết không dấu để Search" />
       <div class="content">
         <h1 class="capital">
           <span class="city"></span>
@@ -23,9 +24,13 @@
         </h1>
         <div class="time"></div>
         <div class="temperature">
-          <span class="value">23</span>
+          <span class="value"></span>
+          <div class="feel-like">
+            Feels like
+            <span></span>
+          </div>
         </div>
-        <div class="short-desc">Rain</div>
+        <div class="short-desc"></div>
         <div class="more-desc">
           <div class="visibility">
             <i class="fa-solid fa-eye"></i>
@@ -33,11 +38,11 @@
           </div>
           <div class="wind">
             <i class="fa-solid fa-wind"></i>
-            <div>3.54(m/s)</div>
+            <div></div>
           </div>
           <div class="cloud">
-            <i class="fa-solid fa-cloud-sun-rain"></i>
-            <div>100(%)</div>
+            <i class="fas fa-tint"></i>
+            <div></div>
           </div>
         </div>
       </div>

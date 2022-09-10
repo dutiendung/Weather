@@ -11,6 +11,7 @@ const input = document.querySelector("input");
 const content = document.querySelector(".content");
 const body = document.querySelector("body");
 const weather = document.querySelector("#weather");
+const feelslike = document.querySelector(".feel-like span")
 async function changeWeatheUI(capitalSearch) {
   let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${capitalSearch}&units=metric&appid=d78fd1588e1b7c0c2813576ba183a667`;
   let data = await fetch(apiURL).then((res) => res.json());
@@ -22,15 +23,15 @@ async function changeWeatheUI(capitalSearch) {
     cloud.innerText = data.main.humidity;
     let temp = Math.round(data.main.temp);
     value.innerText = temp + "°C";
+    feelslike.innerText = Math.floor(data.main.feels_like) + "°C"
     shortDesc.innerText = data.weather[0].main;
     time.innerText = new Date().toLocaleString("vi");
     content.classList.remove("hiden");
-    console.log(temp);
     if (temp > 25) {
       body.style.background =
-        "linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(https://www.nodemy.vn/projects/html-css-js/weather-app/hot.png) no-repeat center/cover";
+        "linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(https://anhdep123.com/109-hinh-anh-phong-canh-ve-thien-nhien-dep-hung-vi/hinh-anh-phong-canh-dep/) no-repeat center/cover";
       weather.style.background =
-        "linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(https://www.nodemy.vn/projects/html-css-js/weather-app/hot.png) no-repeat center/cover";
+        "linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(https://anhdep123.com/109-hinh-anh-phong-canh-ve-thien-nhien-dep-hung-vi/hinh-anh-phong-canh-dep/) no-repeat center/cover";
     } else if (temp < 22) {
       body.style.background =
         "linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(https://www.familynursingcare.com/wp-content/uploads/2021/06/1-min-1024x576.png) no-repeat center/cover";
