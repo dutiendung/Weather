@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
+    url(https://img.freepik.com/free-vector/paper-rainbow-element-cute-weather-clipart-vector-gradient-blue-background_53876-135912.jpg?w=2000)
+      no-repeat center/cover;
+}
+
+#weather {
+  width: 350px;
+  height: 600px;
+  border-radius: 10px;
+  padding: 30px 20px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://media.istockphoto.com/photos/blue-and-orange-sunset-sky-picture-id612023744?k=20&m=612023744&s=612x612&w=0&h=w-70I_Vv9GBnZnODk31h5G8GvsAuDsIvCU-6_R0m8j0=)
+      no-repeat center/cover;
+}
+
+.search {
+  padding: 10px 20px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 5px 4px rgb(0 0 0 / 20%);
+  border-radius: 0px 15px 0px 15px;
+  border: none;
+  transition: 0.5s;
+  font-size: 19px;
+}
+
+.search:focus {
+  border-radius: 15px 0px 15px 0px;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+.content {
+  text-align: center;
+  color: white;
+  margin: 40px 0;
+}
+
+.capital {
+  text-shadow: 2px 2px rgba(0, 0, 0, 50%);
+  font-size: 35px;
+}
+.time {
+  margin: 6px 0 20px 0;
+}
+.city {
+}
+
+.temperature {
+  font-size: 65px;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 10px;
+  margin: 0 30px;
+  padding: 20px;
+}
+.short-desc {
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+  margin: 30px;
+}
+
+.more-desc {
+  display: flex;
+  justify-content: space-between;
+}
+.more-desc i {
+  margin: 15px 0;
+}
+.more-desc div {
+  margin: 0 10px;
+}
+
+.hiden {
+  display: none;
+}
